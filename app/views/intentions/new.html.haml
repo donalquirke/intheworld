@@ -1,0 +1,25 @@
+%h2#header2 Add an intention.
+%p
+  = form_for @new_intention, :url => { :action => "create" } do |f| 
+    %p
+      = f.label :Title
+      = f.text_field :header
+    %p
+      = f.label :Details
+      = f.text_area  :details, :cols => "100", :rows => "10"
+    %p
+      = f.label :Why_do_this
+      = f.text_area :the_why, :cols => "100", :rows => "10"
+    %p  
+      = f.label :Private_to_just_you?
+      = f.check_box :private 
+    %p  
+      = f.label :More_Info
+      = f.text_area :note1, :cols => "100", :rows => "10"
+    %p  
+      = f.label :Even_More_Info
+      = f.text_area :note2, :cols => "100", :rows => "10"
+    %p  
+      = f.label :More_Info_Still
+      = f.text_area :note3, :cols => "100", :rows => "10"
+    = f.submit "Create" 

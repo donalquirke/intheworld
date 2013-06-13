@@ -1,0 +1,17 @@
+-#  This file is app/views/movies/index.html.haml
+%h2#header2 Editor
+%p
+  = form_for @user, :url => { :action => "update" } do |f| 
+    %p
+      = f.label :First_Name
+      = f.text_field :first_name
+    %p
+      = f.label :Surname
+      = f.text_field  :second_name
+    %p
+      = f.label :Password_digest
+      = f.text_field :password_digest
+    %p  
+      = f.label :Email
+      = f.text_field :email
+    = f.submit "Update" 

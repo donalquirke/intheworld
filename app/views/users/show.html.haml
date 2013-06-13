@@ -1,0 +1,20 @@
+-#  This file is app/views/movies/index.html.haml
+%h2#header2= @user.first_name+" "+@user.second_name
+%p
+  ="Id: #{@user.id}"
+%p
+  =@user.email
+%p
+  
+%p#green
+  ="Selected intentions"
+%p
+
+%p#green
+  ="Contributed these intentions"
+%p
+
+
+%p
+  =link_to 'Edit', edit_user_path
+  =link_to 'Destroy', @user,:confirm => 'Are you sure?',:method => :delete 

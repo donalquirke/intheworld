@@ -1,0 +1,28 @@
+%h2#header2= @intention.header
+%p
+  = "Creator is:"
+  =@intention.creator
+%p
+  =@intention.details
+%p#green
+  ="Why do this?"
+%p
+  =@intention.the_why
+%p#green
+  ="Notes"
+%p
+  =@intention.note1
+%p
+  =@intention.note2
+%p
+  =@intention.note3
+%p
+  - if @intention.private==true
+    %p#green 
+      ="This intention is private to just you"
+  - else
+    %p#green
+      ="This intention can be seen and edited by everyone"
+%p
+  =link_to 'Edit', edit_intention_path
+  =link_to 'Delete', @intention,:confirm => 'Are you sure?',:method => :delete 

@@ -1,0 +1,25 @@
+%h2 Sign Up
+= form_for @new_user, :url => { :action => "create" } do |f| 
+  - if @new_user.errors.any?
+    .error_messages
+      %h2 Form is Invalid
+      %ul
+        = for message in @new_user.errors.full_messages
+          %li message       
+  .field
+    = f.label :First_Name
+    = f.text_field :first_name
+  .field
+    = f.label :Second_Name
+    = f.text_field :second_name
+  .field
+    = f.label :Email
+    = f.text_field :email
+  .field  
+    = f.label :Password
+    = f.password_field :password
+  .actions
+    = f.label :Password_confirmation
+    = f.password_field :password_confirmation
+  = f.submit "Create" 
+

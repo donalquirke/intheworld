@@ -1,0 +1,26 @@
+-#  This file is app/views/movies/index.html.haml
+%h2#header2 Intentions
+%p
+  - if @public!=nil and @public.size > 0 
+    %p#green
+      Public
+      %p
+        - @public.each do |i|
+          %tr
+            %td=i.header
+            =link_to "+", i
+            %p
+      
+%p
+  - if @private!=nil and @private.size > 0 
+    %p#green
+      Private to just you
+      %p
+        - @private.each do |i|
+          %tr
+            %td=i.header
+            =link_to "+", i
+            %p
+      
+=button_to "New", new_intention_path, :method => :get
+=button_to( "Log Out", :action => "destroy", :controller => "sessions")

@@ -1,0 +1,14 @@
+%h3 Create possibilities.
+%p To register simply send us your email.
+=form_for @new_reg, :url => { :action => "create" } do |f|  
+  - if @new_reg.errors.any?
+    .error_messages
+      %h2 Form is Invalid
+      %ul
+        = for message in @new_reg.errors.full_messages
+          %li message    
+  .field
+    = f.label :Email
+    = f.text_field :email
+  .actions 
+    = submit_tag "Register"
