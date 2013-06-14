@@ -14,13 +14,13 @@
 ActiveRecord::Schema.define(:version => 20130610230602) do
 
   create_table "intentions", :force => true do |t|
-    t.text     "details",    :limit => 1000
-    t.text     "the_why",    :limit => 1000
-    t.text     "note1",      :limit => 1000
-    t.text     "note2",      :limit => 1000
-    t.text     "note3",      :limit => 1000
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
+    t.text     "details"
+    t.text     "the_why"
+    t.text     "note1"
+    t.text     "note2"
+    t.text     "note3"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.boolean  "private"
     t.string   "header"
     t.integer  "creator"
