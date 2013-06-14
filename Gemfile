@@ -5,11 +5,11 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#group :development, :production, :test do
-#  gem 'pg'
-#end
+group :development, :production, :test do
+  gem 'pg'
+end
 
-gem 'pg'
+#gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -48,3 +48,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
+
+gem 'rufus-scheduler'
+
