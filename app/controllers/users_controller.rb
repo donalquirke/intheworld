@@ -46,9 +46,9 @@ class UsersController < ApplicationController
    
   def create
     @new_user=Users.new(params[:users])
-    logger.debug "*** params are#{params[:users]}"
 
     if @new_user.save
+        UserMailer.registration_confirmation(@new_user).deliver
         flash[:notice] = "User #{@new_user.first_name} was successfully created."
         redirect_to(:action=>'index' ) 
       else
