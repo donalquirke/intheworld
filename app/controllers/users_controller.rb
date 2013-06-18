@@ -46,6 +46,7 @@ class UsersController < ApplicationController
    
   def create
     @new_user=Users.new(params[:users])
+    logger.info("#### User Params #{params[:users]}")
 
     if @new_user.save
         UserMailer.registration_confirmation(@new_user).deliver
