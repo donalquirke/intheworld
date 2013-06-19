@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Users.create(first_name: "admin", second_name: "", email: "donal.quirke@gmail.com", password: "Fully123!", password_confirmation: "Fully123!")
-Users.create(first_name: "El", second_name: "Donz", email: "el.donz@otmail.com", password: "Fully123!", password_confirmation: "Fully123!")
-Users.create(first_name: "Info", second_name: "SantaMartaYoga", email: "info@santamartayoga.com", password: "Fully123!", password_confirmation: "Fully123!")
-Users.create(first_name: "Info", second_name: "HeartoftheWorldTours", email: "info@heartoftheworldtours.com", password: "Fully123!", password_confirmation: "Fully123!")
+Users.create(first_name: "admin", second_name: "", email: "donal.quirke@gmail.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
+Users.create(first_name: "El", second_name: "Donz", email: "el.donz@otmail.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
+Users.create(first_name: "Info", second_name: "SantaMartaYoga", email: "info@santamartayoga.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
+Users.create(first_name: "Info", second_name: "HeartoftheWorldTours", email: "info@heartoftheworldtours.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
 
 
 intentions_list = [
