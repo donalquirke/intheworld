@@ -1,6 +1,7 @@
 -#  This file is app/views/movies/index.html.haml
 %h2#header2= @user.first_name+" "+@user.second_name
-
+%p
+  ="Id: #{@user.id}"
 %p
   =@user.email
 %p
@@ -11,6 +12,13 @@
 
 %p#green
   ="Contributed these intentions"
+%p
+
+%p#green
+  - if @user.receive_intentions == true
+    = "You have chosen to receive daily intentions"
+  - else
+    = "You have chosen not to receive daily intentions"    
 %p
 
 

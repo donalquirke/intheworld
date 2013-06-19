@@ -29,7 +29,8 @@ class UsersController < ApplicationController
       :first_name=>params[:users][:first_name],
       :second_name=>params[:users][:second_name],
       :password_digest=>params[:users][:password_digest],
-      :email=>params[:users][:email])
+      :email=>params[:users][:email],
+      :receive_intentions=>params[:users][:receive_intentions])
      # If update succeeds, redirect to the list action
      flash[:notice] = "User updated."
      redirect_to(:action => 'index')
