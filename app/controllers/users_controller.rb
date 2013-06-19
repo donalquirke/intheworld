@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
   
   def index
+    @current_user ||= Users.find(session[:user_id]) if session[:user_id]
     @users=Users.find(:all, :order=>:first_name)
   end
   
@@ -57,4 +58,15 @@ class UsersController < ApplicationController
         render "new"
     end
   end
+  
+  def daily_intention
+    @users = Users.find_all_by_receive_intentions
+    
+    @users.each do |u|      
+        UserMailer.daily_intention(u).deliver      
+    end
+    
+  end
+  
+  
 end
