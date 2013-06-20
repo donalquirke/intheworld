@@ -4,7 +4,7 @@ class IntentionsController < ApplicationController
     current_user 
     
     @public=Intentions.find_all_by_private false
-    @private=Intentions.find_all_by_creator_and_private @current_user.id, true unless @current_user == nil
+    @private=Intentions.find_all_by_user_id_and_private @current_user.id, true unless @current_user == nil
     
   end
 
@@ -52,8 +52,8 @@ class IntentionsController < ApplicationController
   
   def create
     current_user
-    @new_intention=Intentions.new(params[:intentions])
-    @new_intention.creator=@current_user.id
+    @new_intention=Intentions.new(params[:intentions])    
+    @new_intention.user_id = @current_user.id
     
     respond_to do |format|
       if @new_intention.save

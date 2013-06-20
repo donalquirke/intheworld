@@ -1,4 +1,5 @@
 class Users < ActiveRecord::Base
+  has_many :intentions
   has_secure_password
   attr_accessible :first_name, :second_name, :password_digest, :email, :password, :password_confirmation, :receive_intentions
 

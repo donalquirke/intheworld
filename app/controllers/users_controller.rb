@@ -62,8 +62,12 @@ class UsersController < ApplicationController
   def daily_intention
     @users = Users.find_all_by_receive_intentions
     
-    @users.each do |u|      
-        UserMailer.daily_intention(u).deliver      
+    @users.each do |u| 
+        @count = u.selected_intentions.size
+        # Choose a number in the range 0 to @count
+        #@random_i = ????
+        #@todays_intention = u.selected_intention[@random_i]     
+        #UserMailer.daily_intention(u).deliver      
     end
     
   end
