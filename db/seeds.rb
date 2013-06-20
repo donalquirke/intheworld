@@ -49,8 +49,8 @@ release the emotion using visualization, forgiveness and deep breathing",
      1]
 ]
 
-intentions_list.each do |details, the_why, note1, note2, note3, private, header, creator|
-  Intentions.create( details: details, the_why: the_why, note1: note1, note2: note2, note3: note3, private: private, header: header, creator: creator )
+intentions_list.each do |details, the_why, note1, note2, note3, private, header, user_id|
+  Intentions.create( details: details, the_why: the_why, note1: note1, note2: note2, note3: note3, private: private, header: header, user_id: user_id )
 end
 
 
