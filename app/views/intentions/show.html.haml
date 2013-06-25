@@ -24,5 +24,12 @@
     %p#green
       ="This intention can be seen and edited by everyone"
 %p
-  =link_to 'Edit', edit_intention_path
-  =link_to 'Delete', @intention,:confirm => 'Are you sure?',:method => :delete 
+  = link_to 'Edit', edit_intention_path
+  = link_to 'Delete', @intention,:confirm => 'Are you sure?',:method => :delete 
+%p
+  - if @selected == nil
+    = button_to "Make this one of your intentions", {:action => "chosen", :id => @intention.id}
+  - else
+    = button_to "Stop practicing this intention", {:action => "unchosen", :id => @intention.id}
+
+  

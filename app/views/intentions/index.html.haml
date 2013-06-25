@@ -7,10 +7,12 @@
       %p
         - @public.each do |i|
           %tr
-            %td=i.header
-            =link_to "+", i
+            %td
+            = ">"
+            = i.header
+            = link_to "+", i
             %p
-      
+
 %p
   - if @private!=nil and @private.size > 0 
     %p#green
@@ -18,9 +20,25 @@
       %p
         - @private.each do |i|
           %tr
-            %td=i.header
-            =link_to "+", i
+            %td
+            = ">"
+            = i.header
+            = link_to "+", i
             %p
+%p
+  %p#green
+    = "Chosen to practice."
+    %p
+    - if @selected != nil and @selected.size > 0
+      - @selected.each do |i|
+        %tr
+          %td
+            = ">"
+            = i.header
+            = link_to "+", i
+            %p
+    - else
+      = "You still have to chose intentions for your practice."
       
 =button_to "New", new_intention_path, :method => :get
 =button_to( "Log Out", :action => "destroy", :controller => "sessions")

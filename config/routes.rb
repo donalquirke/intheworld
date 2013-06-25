@@ -4,6 +4,9 @@ Intheworld::Application.routes.draw do
   
   get "users/daily_intention"
   
+  post "intentions/chosen"
+  post "intentions/unchosen"
+  
   resources :intentions
   resources :users
   resources :sessions

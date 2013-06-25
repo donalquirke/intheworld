@@ -1,26 +1,47 @@
 -#  This file is app/views/movies/index.html.haml
 %h2#header2= @user.first_name+" "+@user.second_name
-%p
-  ="Id: #{@user.id}"
-%p
-  =@user.email
+=@user.email
 %p
   
 %p#green
-  ="Selected intentions"
+  ="Selected intentions:"
 %p
+  
+%p#green
+  ="Contributing these public intentions:"
+- if @contributed_public.size > 0
+  %p
+    - if @contributed_public != nil
+      - @contributed_public.each do |i|
+        %p
+          = ">"
+          = i.header
+          = link_to "+", i
+- else
+  None right now.
 
 %p#green
-  ="Contributed these intentions"
-%p
+  ="Contributing these private intentions:"
+- if @contributed_private.size > 0
+  %p
+    - if @contributed_private != nil
+      - @contributed_private.each do |i|
+        %p
+          = ">"
+          = i.header
+          = link_to "+", i
+- else
+  None right now.
+  
 
+%p#green
+  ="Participation Status:"
 %p
   - if @user.receive_intentions == true
-    = "You have chosen to receive daily intentions"
+    = "Receiving daily intentions"
   - else
-    = "You have chosen not to receive daily intentions"    
+    = "Not receiving daily intentions currently"    
 %p
-
 
 %p
   =link_to 'Edit', edit_user_path

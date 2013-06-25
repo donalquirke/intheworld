@@ -5,7 +5,12 @@ class IntentionsController < ApplicationController
     
     @public=Intentions.find_all_by_private false
     @private=Intentions.find_all_by_user_id_and_private @current_user.id, true unless @current_user == nil
-    
+    @selected_intentions=SelectedIntention.find_all_by_user_id (current_user.id)
+    @selected = Array.new
+    @selected_intentions.each do |s|
+      @intention = Intentions.find_by_id(s.intention_id)
+      @selected << @intention
+    end
   end
 
   def new
@@ -18,7 +23,9 @@ class IntentionsController < ApplicationController
   end
   
   def show
-    @intention=Intentions.find(params[:id])     
+    current_user
+    @intention=Intentions.find(params[:id])         
+    @selected=SelectedIntention.find_by_user_id_and_intention_id(current_user.id,@intention.id)
   end
   
   def edit
@@ -65,6 +72,36 @@ class IntentionsController < ApplicationController
         render "new"
       end
     end
+  end
+  
+  def chosen
+    current_user
+    #@intention = Intentions.find_by_id(params[:id])
+    #Rails.logger.info ("Here here intention #{@intention.header}")
+    @si = SelectedIntention.new
+    @si.intention_id = params[:id]
+    @si.user_id = current_user.id
+    if @si.save
+      flash[:notice] = "Intention was successfully chosen to practice."
+    else
+      flash[:error] = "Something went horribly wrong and we couldn't set the intention to be chosen" 
+    end
+    
+    redirect_to intentions_path
+  end
+  
+  def unchosen
+    current_user
+    @si = SelectedIntention.find_by_user_id_and_intention_id(current_user.id, params[:id])
+    if @si 
+      if @si.destroy
+        flash[:notice] = "Intention was successfully unselected."
+      else
+        flash[:error] = "Something went horribly wrong and we couldn't unset the intention."  
+      end
+    end
+    
+    redirect_to intentions_path    
   end
   
 end

@@ -17,7 +17,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user=Users.find(params[:id])    
+    @user=Users.find(params[:id])  
+    @contributed_public, @contributed_private = Array.new  
+    @contributed_public = Intentions.find_all_by_user_id_and_private(@user.id, false) 
+    @contributed_private = Intentions.find_all_by_user_id_and_private(@user.id, true) 
+
+    # Rails.logger.info ("Contributed #{@contributed[0].header}")
   end
   
   def edit
