@@ -16,13 +16,17 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-    @user=Users.find(params[:id])  
-    @contributed_public, @contributed_private = Array.new  
+  def show 
+    @selected = Array.new
+    
+    @user=Users.find(params[:id])
     @contributed_public = Intentions.find_all_by_user_id_and_private(@user.id, false) 
-    @contributed_private = Intentions.find_all_by_user_id_and_private(@user.id, true) 
-
-    # Rails.logger.info ("Contributed #{@contributed[0].header}")
+    @contributed_private = Intentions.find_all_by_user_id_and_private(@user.id, true)    
+    @selected_intentions=SelectedIntention.find_all_by_user_id (@user.id)
+    @selected_intentions.each do |s|
+      @intention = Intentions.find_by_id(s.intention_id)
+      @selected << @intention
+    end
   end
   
   def edit
@@ -48,7 +52,7 @@ class UsersController < ApplicationController
   
   def destroy
     Users.destroy(params[:id]) 
-    redirect_to(:action => 'list_users')
+    redirect_to(:action => 'index')
   end
    
   def create
@@ -65,22 +69,22 @@ class UsersController < ApplicationController
   end
   
   def daily_intention
-    @users = Users.find_all_by_receive_intentions
+    @users = Users.find_all_by_receive_intentions (true)
     
     @users.each do |u| 
       @selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
       @selected = Array.new
       @selected_intentions.each do |s|
-        @intention = Intentions.find_by_id(s.intention_id)
-        @selected << @intention
-    end
-        
-        # Choose a number in the range 0 to @count
-        #@random_i = ????
-        #@todays_intention = u.selected_intention[@random_i]     
-        #UserMailer.daily_intention(u).deliver      
-    end
-    
+        @selected << Intentions.find_by_id(s.intention_id)
+      end
+      @random_i = rand(0..(@selected.count-1)) 
+      @daily_intention = @selected[@random_i]   
+      #UserMailer.daily_intention(u).deliver 
+      #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
+    end       
+       
+    flash[:notice] = "Daily Intentions were successfully sent."
+    redirect_to(:action=>'index' ) 
   end
   
   

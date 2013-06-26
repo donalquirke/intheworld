@@ -5,7 +5,7 @@ class IntentionsController < ApplicationController
     
     @public=Intentions.find_all_by_private false
     @private=Intentions.find_all_by_user_id_and_private @current_user.id, true unless @current_user == nil
-    @selected_intentions=SelectedIntention.find_all_by_user_id (current_user.id)
+    @selected_intentions=SelectedIntention.find_all_by_user_id current_user.id unless @current_user == nil
     @selected = Array.new
     @selected_intentions.each do |s|
       @intention = Intentions.find_by_id(s.intention_id)
