@@ -38,6 +38,9 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
+
+ruby "1.9.3"
+
 gem 'debugger'
 
 gem 'haml'

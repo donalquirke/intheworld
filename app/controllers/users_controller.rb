@@ -68,7 +68,13 @@ class UsersController < ApplicationController
     @users = Users.find_all_by_receive_intentions
     
     @users.each do |u| 
-        @count = u.selected_intentions.size
+      @selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
+      @selected = Array.new
+      @selected_intentions.each do |s|
+        @intention = Intentions.find_by_id(s.intention_id)
+        @selected << @intention
+    end
+        
         # Choose a number in the range 0 to @count
         #@random_i = ????
         #@todays_intention = u.selected_intention[@random_i]     
