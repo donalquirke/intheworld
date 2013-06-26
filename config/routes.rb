@@ -14,6 +14,7 @@ Intheworld::Application.routes.draw do
   
   match 'login' => 'sessions#new'   
   root :to => redirect('/intentions')
+  #root :to => redirect('/login')
   
   
 end
