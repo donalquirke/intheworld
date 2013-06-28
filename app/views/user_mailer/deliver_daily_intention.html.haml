@@ -1,0 +1,41 @@
+-# They reason there is a table with a width of 100% and then another inner table is because i followed advice
+-# from this link: http://css-tricks.com/using-css-in-html-emails-the-real-story/
+
+%table{:width => "100%"}
+  %table
+    %tbody
+      %tr
+        %td
+          %h4{:style => "font-weight: bold;"} Daily Practice Intention.
+      %tr
+        %td
+          Hiya #{@user.first_name}, 
+          %br 
+          %br  
+      %tr
+        %td{:style => "color: #1c70db;"}  
+          Todays intentions is: #{@intention.header}
+          =raw "(#{link_to "read more", intention_url(@intention, :host => "localhost:3000")})"
+          %br
+          %br
+      %tr
+        %td
+          Take a very quick moment now to think about it.
+          %br
+          %br
+      %tr
+        %td
+          Now is a good time to choose when you can do the practice. Picture yourself doing it. Go on. 
+          %br
+      %tr
+        %td
+          %br
+          %br
+          Thanks for your help amigos and amigas.
+          %br
+          %br
+      %tr
+        %td
+          Donal and MoreMindfully.com
+          %br
+          %br

@@ -15,11 +15,13 @@ class UserMailer < ActionMailer::Base
     mail(:to => user.email, :from => "accounts@moremindfully.com", :subject => "New Registration Received")
   end  
   
-  def daily_intention(user)
+  def deliver_daily_intention(user,intention)
     @user=user
+    @intention=intention
     @url="http://www.moremindfully.com/login"
+    Rails.logger.info ("In Deliver Daily Intention: #{@user.first_name} #{@url}, #{@intention.header}")
     # Note: Call to mail needs to be at the end of th method
-    mail(:to => user.email, :from => "intentions@moremindfully.com", :subject => "Todays daily intention")    
+    mail(:to => user.email, :from => "intentions@moremindfully.com", :subject => "Your mindful intention to practice today.")    
   end
     
 end
