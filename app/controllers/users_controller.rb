@@ -78,7 +78,7 @@ class UsersController < ApplicationController
         @selected << Intentions.find_by_id(s.intention_id)
       end
       @random_i = rand(0..(@selected.count-1)) 
-      @daily_intention = @selected[@random_i]  
+      #@daily_intention = @selected[@random_i]  
       #UserMailer.deliver_daily_intention(u,@daily_intention).deliver 
       Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
     end       
