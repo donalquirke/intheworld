@@ -4,6 +4,15 @@
 %p
   
 %p#green
+  ="Participation Status:"
+%p
+  - if @user.receive_intentions == true
+    = "Receiving daily intentions"
+  - else
+    = "Not receiving daily intentions currently"    
+%p
+  
+%p#green
   = "Selected intentions:"
 - if @selected.size > 0
   %p
@@ -17,6 +26,7 @@
   None right now.
     
 %p
+
   
 %p#green
   ="Contributing these public intentions:"
@@ -45,13 +55,6 @@
   None right now.
   
 
-%p#green
-  ="Participation Status:"
-%p
-  - if @user.receive_intentions == true
-    = "Receiving daily intentions"
-  - else
-    = "Not receiving daily intentions currently"    
 %p
 
 %p
