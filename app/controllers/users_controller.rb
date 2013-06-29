@@ -69,7 +69,7 @@ class UsersController < ApplicationController
   end
   
   def daily_intention
-    #@users = Users.find_all_by_receive_intentions (true)
+    @users = Users.find_all_by_receive_intentions (true)
     
     #@users.each do |u| 
       #@selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
