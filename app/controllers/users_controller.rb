@@ -69,9 +69,9 @@ class UsersController < ApplicationController
   end
   
   def daily_intention
-    @users = Users.find_all_by_receive_intentions (true)
+    #@users = Users.find_all_by_receive_intentions (true)
     
-    @users.each do |u| 
+    #@users.each do |u| 
       #@selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
       #@selected = Array.new
       #@selected_intentions.each do |s|
@@ -81,7 +81,7 @@ class UsersController < ApplicationController
       #@daily_intention = @selected[@random_i]   
       #UserMailer.deliver_daily_intention(u,@daily_intention).deliver 
       #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
-    end       
+    #end       
        
     #flash[:notice] = "Daily Intentions were successfully delivered."
     #redirect_to(:action=>'index' ) 
