@@ -72,11 +72,11 @@ class UsersController < ApplicationController
     @users = Users.find_all_by_receive_intentions (true)
     
     @users.each do |u| 
-      @selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
-      @selected = Array.new
-      @selected_intentions.each do |s|
-        @selected << Intentions.find_by_id(s.intention_id)
-      end
+      #@selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
+      #@selected = Array.new
+      #@selected_intentions.each do |s|
+        #@selected << Intentions.find_by_id(s.intention_id)
+      #end
       #@random_i = rand(0..(@selected.count-1)) 
       #@daily_intention = @selected[@random_i]   
       #UserMailer.deliver_daily_intention(u,@daily_intention).deliver 
