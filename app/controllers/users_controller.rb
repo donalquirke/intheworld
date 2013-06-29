@@ -80,11 +80,12 @@ class UsersController < ApplicationController
       @random_i = rand(0..(@selected.count-1)) 
       @daily_intention = @selected[@random_i]  
       #UserMailer.deliver_daily_intention(u,@daily_intention).deliver 
+      Rails.logger.info ("@random_i #{@random_i}, @selected #{@selected}, @selected_intentions #{@selected_intentions}")
       Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
     end       
        
     flash[:notice] = "Daily Intentions were successfully delivered."
-    redirect_to(:action=>'index' ) 
+    redirect_to(:controller => 'intentions', :action=>'index' ) 
   end
   
   
