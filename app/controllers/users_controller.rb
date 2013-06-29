@@ -83,7 +83,7 @@ class UsersController < ApplicationController
       #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
     #end       
        
-    #flash[:notice] = "Daily Intentions were successfully delivered."
+    flash[:notice] = "Daily Intentions were successfully delivered."
     redirect_to(:action=>'index' ) 
   end
   
