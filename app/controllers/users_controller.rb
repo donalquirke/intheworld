@@ -73,21 +73,24 @@ class UsersController < ApplicationController
     
     @users.each do |u| 
       @selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
-      if @selected_intentions != nil
+      if @selected_intentions.size > 0 then
         @selected = Array.new
         @selected_intentions.each do |s|
           @selected << Intentions.find_by_id(s.intention_id)
         end
         @random_i = rand(0..(@selected.count-1)) 
-        @daily_intention = @selected[@random_i]  
-        #UserMailer.deliver_daily_intention(u,@daily_intention).deliver 
-        Rails.logger.info ("@random_i #{@random_i}, @selected #{@selected}, @selected_intentions #{@selected_intentions}")
-        Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
-        Rails.logger.info ("Sent Daily Intention: to #{u.email}")
-      end
+        #@daily_intention = @selected[@random_i]  
+        UserMailer.deliver_daily_intention(u,@selected[@random_i]).deliver 
+        flash[:notice] = "Daily Intentions were successfully delivered."
+        #Rails.logger.info ("@random_i #{@random_i}, @selected #{@selected}, @selected_intentions #{@selected_intentions}")
+        #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
+        #Rails.logger.info ("Sent Daily Intention: to #{u.email}")
+      else
+        flash[:error] = "Dammit. Something went wrong with the delivery of the daily intentions."
+      end  
     end       
        
-    flash[:notice] = "Daily Intentions were successfully delivered."
+    
     redirect_to(:action=>'index' ) 
   end
   
