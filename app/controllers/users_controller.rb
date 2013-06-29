@@ -84,7 +84,7 @@ class UsersController < ApplicationController
     #end       
        
     #flash[:notice] = "Daily Intentions were successfully delivered."
-    #redirect_to(:action=>'index' ) 
+    redirect_to(:action=>'index' ) 
   end
   
   
