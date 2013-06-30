@@ -88,7 +88,7 @@ class UsersController < ApplicationController
       else
         # user hasn´t chosen any intentions yet, so randomly give them one
         # !!!!! Really inefficient code. Needs improving.
-        @intentions = Intentions.find(:all)
+        @intentions = Intentions.find_all_by_private(false)
         @selected = Array.new
         @intentions.each do |s|
           @selected << s

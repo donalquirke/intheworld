@@ -9,20 +9,20 @@
           %h4{:style => "font-weight: bold;"} Daily Practice Intention.
       %tr
         %td
-          Hey there #{@user.first_name}, 
+          Dear #{@user.first_name}, 
           %br 
           %br  
       %tr
         %td 
           You told us that you want to receive daily practice intentions, but you have yet to tell us which ones.
-          You can do that by viewing all available intentions and choosing some.  
+          Do that by viewing all available intentions and choosing some.  
           =raw "(#{link_to "Select intentions", intentions_url(:host => "localhost:3000")})"
           %br
           %br
           -#=raw "(#{link_to "Select Intentions", intention_url(@intention, :host => "localhost:3000")})"
       %tr
         %td  
-          If you want to work at being more conscious today you can practice this intention
+          If you want to work at being more conscious today then practice this intention
           which we randomly picked for you:
           %br
           %br
