@@ -81,16 +81,24 @@ class UsersController < ApplicationController
         @random_i = rand(0..(@selected.count-1)) 
         #@daily_intention = @selected[@random_i]  
         UserMailer.deliver_daily_intention(u,@selected[@random_i]).deliver 
-        flash[:notice] = "Daily Intentions were successfully delivered."
+        
         #Rails.logger.info ("@random_i #{@random_i}, @selected #{@selected}, @selected_intentions #{@selected_intentions}")
         #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
         #Rails.logger.info ("Sent Daily Intention: to #{u.email}")
       else
-        flash[:error] = "Dammit. Something went wrong with the delivery of the daily intentions."
+        # user hasn´t chosen any intentions yet, so randomly give them one
+        # !!!!! Really inefficient code. Needs improving.
+        @intentions = Intentions.find(:all)
+        @selected = Array.new
+        @intentions.each do |s|
+          @selected << s
+        end
+        @random_i = rand(0..(@intentions.size-1))       
+        UserMailer.deliver_daily_intention_nudge(u,@selected[@random_i]).deliver  
       end  
     end       
        
-    
+    flash[:notice] = "Daily Intentions were successfully delivered."
     redirect_to(:action=>'index' ) 
   end
   
