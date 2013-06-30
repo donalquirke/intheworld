@@ -58,5 +58,9 @@
 %p
 
 %p
-  =link_to 'Edit', edit_user_path
-  =link_to 'Destroy', @user,:confirm => 'Are you sure?',:method => :delete 
+  =button_to "Edit User", {:action => "edit", :id => @user.id}, :method => :get
+  =button_to "Delete user", { :action => "destroy", :id => @user.id },
+          :confirm => "Are you sure?", :method => :delete 
+  =button_to "View Intentions", {:controller => "intentions", :action => "index"}
+  
+
