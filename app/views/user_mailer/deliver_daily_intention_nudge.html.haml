@@ -15,14 +15,12 @@
       %tr
         %td 
           You told us that you want to receive daily practice intentions, but you have yet to tell us which ones.
-          Do that by viewing all available intentions and choosing some.  
-          =raw "(#{link_to "Select intentions", intentions_url(:host => "localhost:3000")})"
           %br
           %br
           -#=raw "(#{link_to "Select Intentions", intention_url(@intention, :host => "localhost:3000")})"
       %tr
         %td  
-          If you want to work at being more conscious today then practice this intention
+          If you want to work at being more conscious today then you can practice this intention
           which we randomly picked for you:
           %br
           %br
@@ -43,6 +41,8 @@
           %br
       %tr
         %td
+          To tell us which intentions you want to practice view all available intentions and choose some.  
+          =raw "(#{link_to "Select intentions", intentions_url(:host => "localhost:3000")})"
           %br
           %br
           Thanks for your help amigos and amigas.
