@@ -68,7 +68,23 @@ class UsersController < ApplicationController
     end
   end
   
-  
+    
+  def self.daily_intention
+    @users = Users.find_all_by_receive_intentions (true)
+    
+    @users.each do |u| 
+      @selected_intentions=SelectedIntention.find_all_by_user_id (u.id)
+      if @selected_intentions.size > 0 then
+        @selected = Array.new
+        @selected_intentions.each do |s|
+          @selected << Intentions.find_by_id(s.intention_id)
+        end
+        @random_i = rand(0..(@selected.count-1)) 
+        UserMailer.deliver_daily_intention(u,@selected[@random_i]).deliver 
+      end
+    end       
+    redirect_to(:action=>'index' ) 
+  end
   
   
 end
