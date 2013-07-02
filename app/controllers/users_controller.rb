@@ -79,11 +79,8 @@ class UsersController < ApplicationController
           @selected << Intentions.find_by_id(s.intention_id)
         end
         @random_i = rand(0..(@selected.count-1)) 
-        #@daily_intention = @selected[@random_i]  
         UserMailer.deliver_daily_intention(u,@selected[@random_i]).deliver 
-        
-        #Rails.logger.info ("@random_i #{@random_i}, @selected #{@selected}, @selected_intentions #{@selected_intentions}")
-        #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
+        Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
         #Rails.logger.info ("Sent Daily Intention: to #{u.email}")
       else
         # user hasn´t chosen any intentions yet, so randomly give them one
@@ -94,7 +91,8 @@ class UsersController < ApplicationController
           @selected << s
         end
         @random_i = rand(0..(@intentions.size-1))       
-        UserMailer.deliver_daily_intention_nudge(u,@selected[@random_i]).deliver  
+        UserMailer.deliver_daily_intention_nudge(u,@selected[@random_i]).deliver   
+        Rails.logger.info ("Sent a random intention to #{u.email}")               
       end  
     end       
        
