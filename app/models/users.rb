@@ -20,11 +20,25 @@ class Users < ActiveRecord::Base
         end
         @random_i = rand(0..(@selected.count-1)) 
         UserMailer.deliver_daily_intention(u,@selected[@random_i]).deliver 
-      end
+        #Rails.logger.info ("Sent Daily Intention: #{@daily_intention.header} to #{u.email}")
+        #Rails.logger.info ("Sent Daily Intention: to #{u.email}")
+      else
+        # user hasn´t chosen any intentions yet, so randomly give them one
+        # !!!!! Really inefficient code. Needs improving.
+        @intentions = Intentions.find_all_by_private(false)
+        @selected = Array.new
+        @intentions.each do |s|
+          @selected << s
+        end
+        @random_i = rand(0..(@intentions.size-1))       
+        UserMailer.deliver_daily_intention_nudge(u,@selected[@random_i]).deliver   
+        #Rails.logger.info ("Sent a random intention to #{u.email}")               
+      end  
     end       
+       
+    #flash[:notice] = "Daily Intentions were successfully delivered."
     #redirect_to(:action=>'index' ) 
   end
-  
 end
 
 
