@@ -27,7 +27,7 @@
       %tr
         %td{:style => "color: #1c70db;"} 
           #{@intention.header}
-          =raw "(#{link_to "more details »", intention_url(@intention, :host => "fierce-tundra-1616.herokuapp.com")})"
+          =raw "(#{link_to "more details »", intention_url(@intention, :host => "localhost:3000")})"
           %br
           %br
       %tr
@@ -44,7 +44,7 @@
           %br
           %br
           To tell us which intentions you want to practice, view all available intentions and choose some.  
-          =raw "(#{link_to "Select intentions", intentions_url(:host => "fierce-tundra-1616.herokuapp.com")})"
+          =raw "(#{link_to "Select intentions", intentions_url(:host => "localhost:3000")})"
           %br
           %br
           Thanks for your help amigos and amigas.
