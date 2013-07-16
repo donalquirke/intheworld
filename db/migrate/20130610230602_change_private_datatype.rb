@@ -4,7 +4,6 @@ class ChangePrivateDatatype < ActiveRecord::Migration
       add_column :intentions, :private, :boolean
       #change_table :intentions do |t|
       #t.change :private, :boolean
-    end
   end
 
   def down
