@@ -46,7 +46,7 @@ gem 'debugger'
 gem 'haml'
 
 #gem 'bcrypt-ruby'
-gem 'bcrypt-ruby', '~> 3.1.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :development do
   gem 'better_errors'
