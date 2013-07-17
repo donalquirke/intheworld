@@ -1,6 +1,6 @@
 Intheworld::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  config.action_mailer.default_url_options = { :host => 'localhost' }
+  config.action_mailer.default_url_options = { :host => 'fierce-tundra-1616.heroku.com'}
   
   config.logger = Logger.new(STDOUT)
   config.logger.level = Logger::INFO
