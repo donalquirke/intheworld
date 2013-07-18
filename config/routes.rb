@@ -13,6 +13,8 @@ Intheworld::Application.routes.draw do
   resources :registerations
   
   match 'login' => 'sessions#new'   
+  match 'intentions/:id' => 'intentions#show'
+
   root :to => redirect('/intentions')
   #root :to => redirect('/login')
   

@@ -11,6 +11,9 @@ class IntentionsController < ApplicationController
       @intention = Intentions.find_by_id(s.intention_id)
       @selected << @intention
     end
+    
+    #this is just for debugging purposes
+    @tmp_intention = Intentions.first
   end
 
   def new

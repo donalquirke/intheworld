@@ -41,4 +41,9 @@
       = "You still have to chose intentions for your practice."
       
 =button_to "New", new_intention_path, :method => :get
-=button_to( "Log Out", :action => "destroy", :controller => "sessions")
+=button_to "Log Out", :action => "destroy", :controller => "sessions"
+
+-#=link_to "View this intention", intention_path(:id => @tmp_intention,:from_email => @tmp_intention.id)
+=link_to "View this intention", intention_path(:id => @tmp_intention)
+
+
