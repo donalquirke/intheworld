@@ -15,7 +15,8 @@
       %tr
         %td{:style => "color: #1c70db;"}  
           Todays intentions is: #{@intention.header}
-          =raw "(#{link_to "more details »", intention_url(@intention, :host => "localhost:3000")})"
+          -#=raw "(#{link_to "more details »", intention_url(@intention, :host => "localhost:3000")})"
+          =raw "(#{link_to "more details »", intention_url(@intention)})"
           %br
           %br
       %tr
@@ -25,7 +26,7 @@
           %br
       %tr
         %td
-          Now is a good time to choose when you can do the practice. Picture yourself doing it. Go on. 
+          Now is a good time to choose when you can do the practice grasshopper. Picture yourself doing it. Go on. 
           %br
       %tr
         %td
