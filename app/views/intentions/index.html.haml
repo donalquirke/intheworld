@@ -3,7 +3,7 @@
 %p
   - if @public!=nil and @public.size > 0 
     %p#green
-      Public
+      Open to everyone
       %p
         - @public.each do |i|
           %tr
@@ -27,7 +27,7 @@
             %p
 %p
   %p#green
-    = "Chosen to practice."
+    Intentions you have selected to practice
     %p
     - if @selected != nil and @selected.size > 0
       - @selected.each do |i|
@@ -38,12 +38,10 @@
             = link_to "more details »", i
             %p
     - else
-      = "You still have to chose intentions for your practice."
+      = "Nothing yet. (View an intentions details so you select it for practice.)"
       
 =button_to "New", new_intention_path, :method => :get
 =button_to "Log Out", :action => "destroy", :controller => "sessions"
 
--#=link_to "View this intention", intention_path(:id => @tmp_intention,:from_email => @tmp_intention.id)
-=link_to "View this intention", intention_path(:id => @tmp_intention)
 
 
