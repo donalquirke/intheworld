@@ -51,7 +51,7 @@ false,
 [
 "Do a task alone and wholeheartedly.
 
-Pick a task or tasks, maybe a few household chores or a personal grooming tasks, something that you would normally do,
+Pick a task or tasks, (maybe some household chores or personal grooming tasks) something that you would normally do,
 and do it in silence. So no radio, no TV on in the background. No chatting with someone while doing it. 
 
 Do something that takes 5-15 minutes to complete. The more time the better.
@@ -74,13 +74,204 @@ false,
 1
 ],
 [ 
+"Practice mindfulness when you are with people today. 
+Take a deep breath before meeting them
+
+When with someone can you be completely with them but also hold back some attention for yourself. Keep some awareness back
+for your bodily sensations and breathing.
+ 
+Be sensitive to how other people are reacting to you. Heighten your awareness to the other persons emotional reaction. 
+You can learn if you are becoming emotional if you are sensitive to how someone is reacting to you. Without saying
+anything, the other person becomes a source of awakening your awareness of how you are behaving. And just like straws
+blowing in the wind can hint at something coming down the road, you can get early hints of negative emotions (such as anger)
+rising up within yourself. You will need to hold back a degree of your attention for yourself. Don't lose awareness of
+your own presence. It's easy to be drawn out of your centre in the company of others.
+
+When finishing a conversation or any type of involvement with another person, give attention to how it is that you part company
+with them. Are you already half way out the door and still talking with the other person? Notice if you have already disconnected 
+from the person mentally, before you physically part company. With some people are you even already exiting the encounter from the
+moment you meet them. ", 
+"Usually when we are with people, talking and listening we lose contact with ourselves and easily slip into being on autopilot and habitual 
+reactions. Talking can really draw us out of our centre. It doesn't matter if it a stressful conversation or a friendly one.
+It is easy to become scattered, drained of energy, or feeling uneasy. But by maintaining some awareness of yourself this doesn't
+have to happen. By staying connected to the body and the breath when with another person you can often be with them
+more deeply than before.",
+"",
+"",
+"",
+false,
+"Staying centered in the company of others",
+1
+],
+[ 
+"Today be mindful of your speech. When about to say something ask yourself, 'Is it true?', 'Is it necessary?'. 'Is it helpful?',
+
+It's easy to lose mindfulness when engaging in speech. In particular be mindful of the tendency to engage in negative speech
+and let it go. Hold back from gossiping, or indulging in unskilfull speech. Mindfully restrain yourself from speaking 
+an untruth, or uttering something unkind.", 
+"Words can create harmony in your life, or disharmony. They can build or destroy a persons confidence. ",
+"",
+"",
+"",
+false,
+"I wish I hadn't said that",
+1
+],
+[ 
+"Today take 6 minutes sitting in open awareness. Do this twice in your day.
+Take time in your surroundings, perceiving it as though 
+you had no words or labels to describe what you see. No names for objects, no names for people. As much as you can
+for these few minutes, let go of seeing your world through preconceived labels. 
+
+Add nothing to this experience. Do not add any thought or conditioned response, not even interpretation; just let each
+experience be exactly as it is. Relax with each presentation and feel the space that holds the senses and allow presence to arise. - Rodney Smith
+
+Sit comfortably and relaxed, yet also in such a way as to be supportive of being alert. Consciously orient yourself toward
+being relaxed and having the next six minutes free to completely let all of your preoccupations go and simply
+be with each moment. When you feel restlessness ris up, an urge to do something, or think something over etc. simply
+remind yourself that these six minutes are not for that. You can say to youself, 'Not now, later'. When these six minutes
+are over, there is the rest of Life to think and to do. Feel the urge to do something, don't repress it, but don't
+blindly go along with it either. Give yourself the gift of these few minutes to step back from your world and it's
+dramas.", 
+"
+As soon as we name an object we create a boundary around it and quickly behave as though we truly and deeply know
+what that object is. Take the label 'tree'. Can we really say we know what a 'tree' truly is? As you sit silently 
+perceiving your environment, try to see beyond the labels you habitually use and which can lead to taking so
+much for granted. Try to see things just as they are, without any wish to name them. All names fall short of the true
+mystery of things. Allow ever more detail to emerge into your awareness. Allow your awareness to move about freely
+and settle as it wishes.
+
+Can you notice a deepening sense of ease and being at peace in the moment as you do this?",
+"",
+"",
+"",
+false,
+"Seeing with 'beginners mind'",
+1
+],
+[ 
+"Cultivate the ability to slow down at will, in whatever activity you happen to be engaged in. 
+
+Contain restlessness, and the tendency to rush through the present moment. Resist the tendency to be so caught
+up in getting something done that the present moment is lost. Consciously take your time with tasks and be with whatever
+you are doing wholeheartedly. ", 
+"This deliberate slowing down of actions, even though it may be ever so little, gives you a breathing space,
+and the chance to be aware of yourself. Then you can look inward and remember yourself each time. Also the
+slowing down allows you to bring your attention to inner agitations, which when brought under your gaze, 
+will either fade away, or allow you to exercise some control over them.",
+"",
+"",
+"",
+false,
+"Slow down, you move too fast. You gotta make the moment last.",
+1
+],
+[ 
+"Todays focus is the sounds of your environment.
+
+Be mindful of the sounds that surround you whilst also maintaining a sense of your own presence.  As you sit in traffic,
+as you walk to work, as you sit and eat your meal. Tune into the sounds of your life.  ", 
+"Contemplate the sounds of your environment. Just like everything else in life they are in constant change. Everything that
+we experience is a process that is changing. If we hold fixed unchanging opinions about anything these are not in accord with
+how things really are.  Similarly if we attach to something, it is good sense to keep in mind that it will inevitably change.",
+"Ajahn Chah used to day that if we can imagine when receiving a new object, that it is already broken, old and unusable (which
+inevitably will occur) this will help with not clinging to it so tightly (letting go). We will also be more inclined to
+value and appreciate how things are in this moment.",
+"",
+"",
+false,
+"Using sound to stay present",
+1
+],
+
+[ 
 "", 
 "",
 "",
 "",
 "",
 false,
-"Dummy Intention",
+"dummy1",
+1
+],
+[ 
+"Take time to drink a cup of coffee, tea or any beverage. Sit alone and silently be with yourself while drinking.
+Be completely with just the consumption of the drink. Feel it's heat or coolness. Experience the flavour
+completely. Know the weight of the cup or glass in your hand. Look at the colour of the liquid, it's texture.
+Know the movement of your arm as it lifts the cup to your lips. Be alive to the contact between the material of
+the cup and your lips. Notice thoughts coming and going. Does boredom arise? Can you restrain it?
+Let awareness drink the liquid. Perhaps you will notice self talk wanting the moment to be different. Can you
+let it go?
+
+Continue this to take your day one breath at a time.", 
+"It's easy to make a coffee and before you know it, the cup is empty. Who drank it? Slow down, don't rush through the
+present moment trying to get to some future moment that never actually arrives. Learn to not always be thrown about
+by restlessness and distraction. Just be here and now, alive to the moment. Be alive to your ongoing sense
+experience. ",
+"",
+"",
+"",
+false,
+"One sip at a time",
+1
+],
+[ 
+"Practice being comfortable with silence and being with yourself.
+
+Travel to places in silence. If you commute and normally listen to music or audios, dont.
+If you travel by car and have the radio on, leave it off.
+
+As much as you can in the day avoid talking, have the conversations you need to have, but otherwise
+try to avoid idle chat. Have lunch alone.  Spend time in silence and feel into your heart centre. 
+Avoid newspapers. Avoid the radio and TV etc. Open to yourself.", 
+"It can be difficult to be with ourselves. Mindfulness practice can quickly show us just how busy our thinking mind
+can be. Its understandable that we would want to distract ourselves from ourselves as much as possible. But in distraction
+there is no true freedom from over-thinking. We need to learn to open to the mind, yet not be completely identified with
+it. To learn not to be dominated by thinking. Not to show the busy mind any interest if need be. This is something we can 
+practice as much off-the-cushion as on it.",
+"",
+"",
+"",
+false,
+"Learning to be comfortable with silence",
+1
+],
+[ 
+"Today be aware of your time keeping. Do you arrive rushed to appointments, or are you in control sufficiently to organize yourself
+and arrive with composure. Are you generally late for appointments. Do you leave it until the last moment to get to places
+and people.", 
+"The Eastern words most often translated as mindfulness are sat and smrti and as B. Alan Wallace a former Buddhist monk
+and now researcher points out, the root meaning of these words is remembering or recollecting.  Sati and Smrti imply something more
+comprehensive than just the giving of bare attention. Something more than just noticing what is happening as it happens without layering
+on anything additional. It is bare attention and also memory.
+
+When practicing a mindfulness technique like observing the breath, as much 
+as we are training ourselves to place our attention in an open and non-judging way, we are also strengthening the quality of recollection,
+of remembering, of being present. 
+
+When practicing mindfulness of breathing, each time you wake up to having lost awareness of the breath after
+your mind has drifted into thoughts, you are also deepening your connection with awareness. You were lost into thoughts and then somehow,
+out of nowhere, awareness returns and you notice, Wow, where have I been? This remembering of the breath after the mind leaves it is an act 
+of mindfulness. There is a recollection or a remembering of your own presence in the moment and what it is you had been doing. Knowing what is 
+happening, and not forgetting it are the two qualities of sati and mindfulness. It is not simply attention. 
+
+Once again this is holding in awareness of what we are doing or intending, requires us to be alive, alert and present. If you
+find yourself easily distracted, rushing about, always late. Learning to stay mindful of what you have planned helps to counter this.",
+"",
+"",
+"",
+false,
+"Headless chicken",
+1
+],
+[ 
+"", 
+"",
+"",
+"",
+"",
+false,
+"dummy1",
 1
 ]
 
