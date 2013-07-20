@@ -12,7 +12,8 @@ Intheworld::Application.routes.draw do
   resources :sessions
   resources :registerations
   
-  match 'login' => 'sessions#new'   
+  match 'login' => 'sessions#new' 
+  match 'logout' => 'sessions#destroy'  
   match 'intentions/:id' => 'intentions#show'
 
   root :to => redirect('/intentions')

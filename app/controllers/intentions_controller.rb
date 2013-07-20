@@ -29,6 +29,10 @@ class IntentionsController < ApplicationController
     current_user
     @intention=Intentions.find(params[:id])         
     @selected=SelectedIntention.find_by_user_id_and_intention_id(current_user.id,@intention.id)
+    if not verify_ok_show (@intention)
+      session[:naughty] = "Grasshopper, grasshopper, grasshopper. That is not how we make progress along the path."
+      redirect_to logout_path
+    end
   end
   
   def edit
@@ -107,4 +111,10 @@ class IntentionsController < ApplicationController
     redirect_to intentions_path    
   end
   
+  private
+  
+  def verify_ok_show (intention)
+    #logger.info("**** in verify current user is: #{current_user.id}, user id is #{intention.user_id}")
+    return true if current_user.id == intention.user_id || intention.private == false 
+  end 
 end
