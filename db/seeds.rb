@@ -165,7 +165,7 @@ will either fade away, or allow you to exercise some control over them.",
 "",
 "",
 false,
-"Slow down, you move too fast. You gotta make the moment last.",
+"Slow down, you move too fast, you gotta make the moment last.",
 1
 ],
 [ 
@@ -314,7 +314,8 @@ false,
 1
 ],
 [ 
-"Today, after work, take fifteen, twenty minutes (half an hour is better still) to be with yourself.
+"Today take fifteen, twenty minutes (half an hour is better still) to be with yourself. Maybe when you finish
+your days work or activities.
 Sit in a room alone and just simply be. Do not read anything, do not listen to anything, do not watch anything. 
 Do not even meditate!
  

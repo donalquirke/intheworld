@@ -28,7 +28,7 @@
   = link_to 'Delete', @intention,:confirm => 'Are you sure?',:method => :delete 
 %p
   - if @selected == nil
-    = button_to "Make this one of your intentions", {:action => "chosen", :id => @intention.id}
+    = button_to "Practice this intention", {:action => "chosen", :id => @intention.id}
   - else
     = button_to "Stop practicing this intention", {:action => "unchosen", :id => @intention.id}
 
