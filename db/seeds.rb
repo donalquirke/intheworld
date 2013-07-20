@@ -8,7 +8,7 @@
 
 Users.create(first_name: "admin", second_name: "", email: "donal.quirke@gmail.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
 Users.create(first_name: "El", second_name: "Donz", email: "el.donz@hotmail.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
-Users.create(first_name: "Info", second_name: "SantaMartaYoga", email: "info@santamartayoga.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: true)
+Users.create(first_name: "Info", second_name: "SantaMartaYoga", email: "info@santamartayoga.com", password: "Fully123!", password_confirmation: "Fully123!", receive_intentions: false)
 
 
 intentions_list = [
@@ -62,6 +62,8 @@ thing and our mind something else. As we brush our teeth, we watch TV. To avoid 
 mop the floor or as we wash the dishes we talk or listen to the radio. We learn to sit with mental and physical discomfort in
 formal practice. But quickly seek to run away from feelings of boredom or the inner talk that accompanies many of our routine
 tasks.
+
+All of life is practice.
 
 Notice the minds tendency to complain perhaps.",
 "Ajahn Sumedhos story about resistance causing him unhappiness: In the early days I would sometimes think: I didnt come here
@@ -146,7 +148,7 @@ Can you notice a deepening sense of ease and being at peace in the moment as you
 "",
 "",
 false,
-"Seeing with 'beginners mind'",
+"Seeing again with 'beginners mind'",
 1
 ],
 [ 
@@ -183,15 +185,23 @@ false,
 "Using sound to stay present",
 1
 ],
-
 [ 
-"", 
-"",
+"
+Buddha highlighted five hindrance or obstacles to mindfulness: Ill-Will, Sense Desires,
+Dullness, Restless anxiety and self doubt. We are all experts in at least two of these.
+
+Begin today to notice which of the hindrances you specialize in.", 
+"Actively investigate each hindrance by asking: What am I getting out of my boredom, aversion, neediness, worry, etc.?.
+Can you bring wise reflection to the hindrance. Can you bring some perspective to these strong emotional states?
+With mindfulness we can safeguard ourselves and not allow unhelpful thinking to grow beyond our nose. We can bring 
+conscious awareness to negative emotions, and with it, perspective and some psychological space. We can meet difficult 
+experiences with a great heart, alleviating afflictive mental states and reducing emotional stress.
+We learn to let go.",
 "",
 "",
 "",
 false,
-"dummy1",
+"Know your mindfulness hinderances",
 1
 ],
 [ 
@@ -265,13 +275,81 @@ false,
 1
 ],
 [ 
+"Choose a behaviour you engage in that is unskilfull. Perhaps you are manipulative, insincere, or deceitful. 
+Maybe there is a tendency to be rude with other drives when you drive. Or perhaps you too easily indulge in complaining 
+or some negative mood. 
+Reflect upon the consequences of your behaviour for yourself and others. Commit to not engaging in it today if the urge or possibility arises.
+Notice the pattern begin, but with mindful restrain hold back from going with the energy behind it. ", 
+"Reflect deeply upon the interdependent nature of interests. Deeply reflect on the interdependent nature of your well-being 
+and interests in the relations that you have with people you share your life with and the community in which you abide. 
+Reflect on the destructiveness of emotions such as anger that get in the way of harmony in your life and community.",
+"",
+"",
+"",
+false,
+"Be nice",
+1
+],
+[ 
+"For 20 minutes take yourself off the 'communication grid'. Turn off your phone,
+stay away from the computer. Unplug yourself from the 'always on' society. 
+
+If possible take this time in nature. If that isn't possible try at least to sit front of a living object, plant or animal. 
+Otherwise just 'potter about' and treat yourself to something wholesome. Do you best to avoid spending the time thinking. 
+Tune into your breath and your body. Hold them in the background of your awareness. Stroll about at your leisure. Be clear
+about the intention behind this pause in your day. Step back from everything and settle into a sense of your own presence.", 
+"The busyness of life had very much made us 'human doers' as opposed to 'human beings'. Pressure from our culture,
+society and family can easily have us running around most of the day. Or Being busy can be just another habit we develop
+Whatever the reason, when it becomes the norm for us, it's easy to lose touch the simple contentment of being.  
+
+
+Studies have shown that a mere 20 minutes spent in a natural environment has a restorative effect on the mind.
+One of the best ways to get feeling better is to reconnect with nature. It decreases anger, increases vitality,
+energy, mood and happiness and immune system functioning.",
+"",
+"",
+"",
+false,
+"Disconnect. You deserve it.",
+1
+],
+[ 
+"Today, after work, take fifteen, twenty minutes (half an hour is better still) to be with yourself.
+Sit in a room alone and just simply be. Do not read anything, do not listen to anything, do not watch anything. 
+Do not even meditate!
+ 
+How does this feel? Can you be alone with yourself, awake in your normal environment, still and sitting
+peacefully?", 
+"It seems that we always need to be doing something. We always need to be distracting ourselves. Our consciousness is constantly 
+being flooded by thoughts and external stimulation. We tend to be quite restless creatures. The body is fidgeting,
+the emotions are stirred up, or at the very least, thinking is going and going. This practice can bring to the surface uncomfortable feeling such 
+as boredom, loneliness, uneasiness, weariness, anxiety, confusion. 
+
+We can find that we're not actually that interested in allowing the moment to be just as it is. We want to be entertained.
+We want to be interesting people. We cover over uncomfortable feelings with unhelpful habits. 
+
+But can you just sit and be patient?  Can you not be blown away by boredom-induced thoughts? Can you just be here and now?
+If we keep reacting fearfully to feelings such as boredom and loneliness, or need constant entertaining, practice will always
+stop whenever these states arise. 
+
+By simply allowing these states to rise up but not indulging in them, they pass through our awareness and can lose their menace.
+By allowing them to be but not going along with them, there is the possibility of change. Destructive habits that are used to
+avoid these states can be weakened.",
+"",
+"",
+"",
+false,
+"Simply Being",
+1
+],
+[ 
 "", 
 "",
 "",
 "",
 "",
 false,
-"dummy1",
+"Next Intention",
 1
 ]
 
