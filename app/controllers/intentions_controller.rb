@@ -45,9 +45,9 @@ class IntentionsController < ApplicationController
       :header=>params[:intentions][:header],
       :details=>params[:intentions][:details],
       :the_why=>params[:intentions][:the_why],
-      :note1=>params[:intentions][:note1],
-      :note2=>params[:intentions][:note2],
-      :note3=>params[:intentions][:note3],
+      :footnotes=>params[:intentions][:footnotes],
+      :addendum=>params[:intentions][:addendum],
+      :tags=>params[:intentions][:tags],
       :private=>params[:intentions][:private]
     )
      # If update succeeds, redirect to the list action

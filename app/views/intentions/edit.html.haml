@@ -3,16 +3,16 @@
   = form_for @intention, :url => { :action => "update" } do |f| 
     %p
       = f.label :Title
-      = f.text_field :header
+      = f.text_area :header, :cols => "100", :rows => "1"
+    %p  
+      = f.label :Private_to_just_you?
+      = f.check_box :private 
     %p
       = f.label :Details
       = f.text_area  :details, :cols => "100", :rows => "10"
     %p
       = f.label :Why_do_this
       = f.text_area :the_why, :cols => "100", :rows => "10"
-    %p  
-      = f.label :Private_to_just_you?
-      = f.check_box :private 
     %p  
       = f.label :Footnotes
       = f.text_area :footnotes, :cols => "100", :rows => "10"

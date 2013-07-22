@@ -1,5 +1,12 @@
 %h2#header2= @intention.header
 %p
+  - if @intention.private==true
+    %p#green 
+      ="This intention is private to just you"
+  - else
+    %p#green
+      ="This intention can be seen and edited by everyone"
+%p
   = "Creator is:"
   =@intention.user_id
 %p
@@ -9,20 +16,23 @@
 %p
   =@intention.the_why
 %p#green
-  ="Notes"
-%p
-  =@intention.footnotes
-%p
-  =@intention.addendum
-%p
-  =@intention.tags
-%p
-  - if @intention.private==true
+  - if @intention.footnotes
     %p#green 
-      ="This intention is private to just you"
-  - else
-    %p#green
-      ="This intention can be seen and edited by everyone"
+      ="Footnotes"
+    %p
+      =@intention.footnotes
+%p#green
+  - if @intention.tags
+    %p#green 
+      ="Tags"
+    %p
+      =@intention.tags
+%p#green
+  - if @intention.addendum
+    %p#green 
+      ="Addendum"
+    %p
+      =@intention.addendum    
 %p
   = link_to 'Edit', edit_intention_path
   = link_to 'Delete', @intention,:confirm => 'Are you sure?',:method => :delete 
