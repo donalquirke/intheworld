@@ -277,7 +277,7 @@ false,
 ],
 [ 
 "Choose a behaviour you engage in that is unskilfull. Perhaps you are manipulative, insincere, or deceitful. 
-Maybe there is a tendency to be rude with other drives when you drive. Or perhaps you too easily indulge in complaining 
+Maybe there is a tendency to be rude with other drivers when you drive. Or perhaps you too easily indulge in complaining 
 or some negative mood. 
 Reflect upon the consequences of your behaviour for yourself and others. Commit to not engaging in it today if the urge or possibility arises.
 Notice the pattern begin, but with mindful restrain hold back from going with the energy behind it. ", 
@@ -345,6 +345,116 @@ false,
 1
 ],
 [ 
+"Todays focus in on urges. Have the intention to look out for urges rising up as you go about the day. 
+It may be the urge to say something negative, or to indulge in an act that is unwholesome. It may be an urge to
+physically strike out at someone. It may be the urge to go online and seek distraction from some mild work related
+distress. You'll know it's an urge because it will have a physical 'emotional kick' to it.
+
+When you notice the urge, pause, take a moment and make a conscious decision about whether to go with it. 
+Be aware that whatever you decide has a consequence for you and others.  
+
+You could do the S.T.O.P practice.
+
+S: is to stop whatever you are doing
+T: take some mindful breaths
+O: observe how you are feeling. Connect with your body. what's going on
+P: proceed with mindfulness and good sense.
+
+The point is to interrupt the urge. Take a moment to get some perspective and good sense before taking an action.
+
+With some urges not readily let go, we need to be willing to 'carry' the emotional charge with us until such time
+as the energy of it fades. this can ask quite a commitment of us.
+
+When we sit in formal mindfulness meditation practice, we are constantly resisting urges. Perhaps we resist the urge
+to itch, or we resist the urge to follow a fantasy that rises up. Maybe we resist boredom and the urge to finish the sit early.
+In practice We are constantly mindfully restraining ourselves. It is another way of speaking about letting go.
+
+", 
+"Research shows that an ability to resist urges will improve your relationships, increase your dependability,
+and raise your performance. If you can resist your urges, you can make better, more thoughtful decisions. 
+You can be more intentional about what you say and how you say it. You can think about the outcome of your 
+actions before following through on them.",
+"In 2007, the school launched a pilot program that offered kids five weeks of mindfulness training from a coach who visited 
+classrooms twice a week, leading 15-minute sessions on how to have gentle breaths and still bodies.
+The students trained their attention by focusing on their breath and noting the emotions that arose. 
+The coach also asked them to cultivate compassion by
+reflecting,taking a moment,before lashing out at someone on the playground. 
+'I was losing at baseball and I was about to throw a bat,' one boy told his class,
+according to The New York Times. 'The mindfulness really helped.'
+The reporter asked another boy participating in the program to describe mindfulness. 
+It's not hitting someone in the mouth he said. 
+His answer is wise, wide, and deep. It illustrates one of the most important uses of mindfulness: helping us deal with difficult emotions.
+It suggests the possibility of finding the gap between a trigger event and our usual conditioned response to it, and using that pause 
+to collect ourselves and change our response. And it demonstrates that we can learn to make better choices.
+
+",
+"",
+"",
+false,
+"Let the energy peak and pass. Change your response.",
+1
+],
+[ 
+"Give attention to your self-talk. What sort of mental state is your self talk cultivating? Is it helpful? Accurate?
+Biased?", 
+"Thoughts are not facts.
+
+We are holding silent inner conversation with ourselves all the time. It is as though someone is inside our head always with an
+opinion, a comment. Quickly to judge and criticize yourself or others. It loves to trawl through the past, perhaps holding
+tribulinals about some long bygone event. Or it projects into the future, often in a fearful way. It loves to spin 
+stories about 'the could have beens, the might have beens, the should have beens' etc. 
+
+Notice how much you blindly go along with this inner chit chat. How very much identified you are with it.
+
+In particular if there is a lot of emotion going on behind a particular storyline. Can you
+see how this inner voice holds to a view as though it knew everything about the situation. Including the future consequences.
+As though it were able to predict the future accurately.
+
+Really do your best to see how much the inner voice clings to a particular interpretation of events. How it fixates.
+
+If the self-talk is burdensome take time to question it. Ask yourself how completely true and accurate what you are telling
+youself is? Dispute it so as to interrupt it.  
+",
+"Could also introduce Kaite Byrons 4 Questions methodology.",
+"",
+"",
+false,
+"Would you ever listen to yourself.",
+1
+],
+[ 
+"Take time to do the following a few times during the day.
+
+Think about the last time you felt happy; I mean really, truly happy. I
+want you to picture that scene in your mind right now. How did your body
+feel? What did you smell? Who was there? What were you wearing? How
+was the weather? Think about the situation in as much detail as you can.
+Now, how does your body feel?
+
+Thinking back upon a happy time in your life brings up a happy feeling
+in your body. Your heart rate slows, you breathing rests.", 
+"It is easier to be present to the moment when in a positive state.
+
+An Eastern word for meditation is Bhavana, which means: to cultivate.
+
+We are cultivating mental states all of the time. What we are doing with our mind in this moment is conditioning
+how we experience the next. Usually though we are not aware of what we conditioning for ourselves. We are blindly
+going along with thoughts, or blindly allowing the surrounding environment to condition us. 
+
+Most of us are unaware of our moods and their impact on our behaviors
+and perceptions. So your moods typically precede and color your
+thoughts. Most often, this emotional biasing of your thoughts takes place
+without your conscious awareness, which can frequently lead to negative
+consequences.",
+"One of the main discoveries of positive psychology is that you can consciously generate positive moods by stringing
+together a series of positive thoughts. ",
+"",
+"",
+false,
+"Cultivate positive emotion",
+1
+],
+[ 
 "", 
 "",
 "",
@@ -354,7 +464,6 @@ false,
 "Next Intention",
 1
 ]
-
 ]
 
 intentions_list.each do |details, the_why, footnotes, addendum, tags, private, header, user_id|
