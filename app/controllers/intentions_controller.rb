@@ -11,9 +11,9 @@ class IntentionsController < ApplicationController
       @intention = Intentions.find_by_id(s.intention_id)
       @selected << @intention
     end
-    
-    #this is just for debugging purposes
-    @tmp_intention = Intentions.first
+    @public.sort! { |a,b| a.header.downcase <=> b.header.downcase }
+    @private.sort! { |a,b| a.header.downcase <=> b.header.downcase }
+    @selected.sort! { |a,b| a.header.downcase <=> b.header.downcase }
   end
 
   def new
