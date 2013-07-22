@@ -2,7 +2,7 @@
 %h2#header2 Intentions
 %p
   %p#green
-    Intentions you have selected to practice
+    Intentions you have selected to practice:
     %p
     - if @selected != nil and @selected.size > 0
       - @selected.each do |i|
@@ -17,7 +17,7 @@
 %p
   - if @private!=nil and @private.size > 0 
     %p#green
-      Private to just you
+      Private intentions that you have created:
       %p
         - @private.each do |i|
           %tr
@@ -28,13 +28,13 @@
             %p
   - else
     %p#green
-      Private intentions
+      Private intentions that you have created:
     %p
       You haven't created any private intentions
 %p
   - if @public!=nil and @public.size > 0 
     %p#green
-      Public intentions
+      Community sourced intentions:
       %p
         - @public.each do |i|
           %tr

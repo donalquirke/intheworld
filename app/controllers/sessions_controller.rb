@@ -29,8 +29,8 @@ class SessionsController < ApplicationController
     if session[:naughty]
       flash[:notice] = session[:naughty]
       session[:naughty] = nil
-    else
-      flash[:notice] = "Logged out!"
+    #else
+      #flash[:notice] = "Logged out!"
     end
   end
  
