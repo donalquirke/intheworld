@@ -26,10 +26,9 @@ class SessionsController < ApplicationController
   
   def destroy
     session[:user_id] = nil
-    logger.info ("***** params is #{params}")
-    logger.info ("***** session in destroy is #{session[:naughty]}")
     if session[:naughty]
       flash[:notice] = session[:naughty]
+      session[:naughty] = nil
     else
       flash[:notice] = "Logged out!"
     end

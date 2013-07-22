@@ -42,7 +42,8 @@ feel disgust and disdain.
 "Suggest some positive psychology techniques to assist with shifting out of negative moods. 
 As soon as you understand what the negative emotion is telling you,
 release the emotion using visualization, forgiveness and deep breathing",
-"",
+"Expand on this to idea to introduce the Brahma Viharas. What do you gain from feelings of jealousy/envy or going with negativity. Noticing the inner voice
+being fueld by a negative emotion, Being energised by it and becoming. There is a real 'me me' experience which is what the separate egocentric self needs",
 "",
 false,
 "Mindfulness of underlying attitude",
@@ -356,8 +357,8 @@ false,
 
 ]
 
-intentions_list.each do |details, the_why, note1, note2, note3, private, header, user_id|
-  Intentions.create( details: details, the_why: the_why, note1: note1, note2: note2, note3: note3, private: private, header: header, user_id: user_id )
+intentions_list.each do |details, the_why, footnotes, addendum, tags, private, header, user_id|
+  Intentions.create( details: details, the_why: the_why, footnotes: footnotes, addendum: addendum, tags: tags, private: private, header: header, user_id: user_id )
 end
 
 

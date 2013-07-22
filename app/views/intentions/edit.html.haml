@@ -14,12 +14,12 @@
       = f.label :Private_to_just_you?
       = f.check_box :private 
     %p  
-      = f.label :More_Info
-      = f.text_area :note1, :cols => "100", :rows => "10"
+      = f.label :Footnotes
+      = f.text_area :footnotes, :cols => "100", :rows => "10"
     %p  
-      = f.label :Even_More_Info
-      = f.text_area :note2, :cols => "100", :rows => "10"
+      = f.label :Addendum
+      = f.text_area :addendum, :cols => "100", :rows => "10"
     %p  
-      = f.label :More_Info_Still
-      = f.text_area :note3, :cols => "100", :rows => "10"
+      = f.label :Tags
+      = f.text_area :tags, :cols => "100", :rows => "10"
     = f.submit "Update" 

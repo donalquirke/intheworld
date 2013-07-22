@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130624182722) do
+ActiveRecord::Schema.define(:version => 20130721133619) do
 
   create_table "intentions", :force => true do |t|
     t.text     "details"
     t.text     "the_why"
-    t.text     "note1"
-    t.text     "note2"
-    t.text     "note3"
+    t.text     "footnotes"
+    t.text     "addendum"
+    t.text     "tags"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.boolean  "private"

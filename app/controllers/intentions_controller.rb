@@ -30,7 +30,7 @@ class IntentionsController < ApplicationController
     @intention=Intentions.find(params[:id])         
     @selected=SelectedIntention.find_by_user_id_and_intention_id(current_user.id,@intention.id)
     if not verify_ok_show (@intention)
-      session[:naughty] = "Grasshopper, grasshopper, grasshopper. That is not how we make progress along the path."
+      session[:naughty] = "Grasshopper! That is not how we make progress along the path."
       redirect_to logout_path
     end
   end
