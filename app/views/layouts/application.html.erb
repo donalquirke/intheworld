@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="js canvas canvastext history pointerevents mti-helveticaneuew0145ligh-n4-active mti-helveticaneuew0175bold-n4-active mti-helveticaneuew01thin-n4-active mti-active">
 <head>
-  <title>MoreMindfully.com | More mindful where it matters.</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <title>MoreMindfully.com | Create possibilities.</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %> 
+  <link href="https://moremindfully.s3.amazonaws.com/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 </head>
+
+
 <body>   
 	 
 <%- flash.each do |key, msg| -%>

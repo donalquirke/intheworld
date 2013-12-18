@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+    <%= javascript_include_tag "application" %>
+    <script>
+      $(function() {
+            var BV = new $.BigVideo({useFlashForFirefox:false,controls:false,loop:true});
+      BV.init(); 
+	  BV.show('http://video-js.zencoder.com/oceans-clip.mp4',{ambient:true});      });
+	  
+    </script>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<html>
+
+<head>
+
+</head>
+   
+<!-- Relax. Open. Grow. -->
+<!-- Relax. Let go. Grow. -->
+<!-- Open. Let go. Grow. -->
+<body>	
+   <%= cache "vid_streaming" do %>
+	<div id="container">
+		<div id="main-banner">
+			<h1>You live moments. Find more of them. </h1>
+			<h4>MoreMindfully.com can help you do mindfulness and create possibilities. </h4>
+		</div>
+        <video id="player" autoplay loop autobuffer>
+        	<source src="https://moremindfully.s3.amazonaws.com/app_video.mp4" type="video/mp4" />
+			<source src="https://moremindfully.s3.amazonaws.com/app_video.webm" type="video/webm" />
+			<source src="https://moremindfully.s3.amazonaws.com/app_video.ogv" type="video/ogv" />
+			<!-- <source src="assets/videos/Dewdrop_640.mp4" type="video/mp4" />
+			<source src="assets/videos/Dewdrop.webm" type="video/webm" />
+			<source src="assets/videos/Dewdrop.ogv" type="video/ogg" /> -->
+			<!-- <source src="assets/videos/app_video.mp4" type="video/mp4" />
+			<source src="assets/videos/app_video.webm" type="video/webm" />
+			<source src="assets/videos/app_video.ogv" type="video/ogv" />-->
+        </video>
+    </div>   
+    <% end %>
+         
+    <div class="main-header">
+    	<nav class="main-nav">  
+      		<!-- <a class="logo-link" href="/company/" id="nav-logo" title="MoreMindfully.com">MoreMindfully.com</a>   -->
+          	
+    		<%= image_tag "Sm and long black.png", :class=>"nav-logo"%>
+    		<a class="signin-link" href="/login/" title="Login">Login</a> 
+          	<a class="register-link" href="#second-product-section" title="Live more mindfully">Live it</a>  
+      		<a class="about-link" href="#first-product-section" title="Learn mindfulness">Learn it</a>  
+    	</nav>
+    </div>
+			
+        
+   <div id="first-product-section" class="content-section"> 
+   		<div class="row">
+   			<div class="first-row-text" style="margin-top: 17.73333333333333px; opacity: 0.7466666666666667;">
+                <h2>Time for you</h2>
+                <p>Research has shown that people who dwell on the past and future are less likely to be happy than people who concentrate on the present.</p> 
+                <p>With mindfulness you can get a break from an overly busy mind and find peace, happiness and stillness.
+                You
+                	can interrupt unhelpful habitual patterns of thought and behaviour and hold back negative emotional outflows. You can step back
+                	in the moment and not get so caught up in life's dramas</p>
+				<a href="/" >Find out about learning mindfulness.</a> 
+			</div>
+			<div class="image-container-right">
+				<!--  <img src="https://moremindfully.s3.amazonaws.com/people2.jpg" class="img-responsive" alt="Smiling Happy People"> -->
+				<%= image_tag "people2.jpg", :class=>"img-responsive"  %>
+			</div>
+   		</div>   	
+   </div>	    
+   
+      <div id="second-product-section" class="content-section"> 
+   		<div class="row">
+   			<div class="image-container-left" style="position: relative;">
+				<!-- <img src="https://moremindfully.s3.amazonaws.com/NY%20Bike%20Journey.jpg" class="img-responsive" alt="Mindful Bike Journey"> -->
+				<%= image_tag "NY%20Bike%20Journey.jpg", :class=>"img-responsive"  %>
+			</div>
+   			<div class="first-row-text" id="second-row-text" style="margin-top: 17.73333333333333px; opacity: 0.7466666666666667;">
+                <h2>More mindful where it matters</h2>
+                <p>Mindfulness is simple. Being mindful is difficult. </p>
+                <p>Learning mindfulness meditation is one thing, managing to be mindful in everyday life is something else.</p>
+                <p>We have an app to help you with that.</p>
+				<a href="/" >Find out about living more mindfully.</a>
+			</div>
+
+   		</div>   	
+   </div>	    
+   
+   <div id="logo-section"> 		
+		<%= image_tag "logo 200x200.png", :class=>"img-responsive", :id=>"logo"%>	
+		<h4>Email us at: feedback@moremindfully.com</h4>		
+   </div>  
+    
+   <div id="bottom-banner">
+   </div>
+        	
+
+<!-- End EasyHtml5Video.com BODY section -->
+<%= yield %>
+
+</body>
+
+
+
+
+</html>

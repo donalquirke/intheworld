@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 group :development, :production, :test do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 #gem 'pg'

@@ -15,9 +15,10 @@ Intheworld::Application.routes.draw do
   match 'login' => 'sessions#new' 
   match 'logout' => 'sessions#destroy'  
   match 'intentions/:id' => 'intentions#show'
+  match 'get_started' => 'sessions#get_started'
 
-  root :to => redirect('/intentions')
-  #root :to => redirect('/login')
+  #root :to => redirect('/intentions')
+  root :to => redirect('/get_started')
   
   
 end

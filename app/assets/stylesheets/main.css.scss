@@ -1,5 +1,410 @@
-// Place all the styles related to the intentions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  height: 100%
+}
+
+/* for 480px or less */
+@media (max-width: 480px){
+
+
+    h1 {
+      font-size: 24px;
+    }
+    
+    h4 {
+      font-size: 10px;
+    }
+
+}
+
+body {
+  background: #FFF;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-transition: opacity 1s ease .1s;
+  -moz-transition: opacity 1s ease .1s;
+  -ms-transition: opacity 1s ease .1s;
+  -o-transition: opacity 1s ease .1s;
+  transition: opacity 1s ease .1s;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-banner {
+    display: table-cell;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 45px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    text-align: center;
+
+
+  h4 {
+    font-family: "proxima-nova",sans-serif, 'HelveticaNeueW01-Thin';
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 31px;
+  }
+  
+  h1 {  
+    font-family: 'HelveticaNeueW01-Thin';
+    font-weight: 0;
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.1;
+    text-shadow: none;
+    color: white;
+    vertical-align: middle;
+    width: 100%;
+    text-rendering: optimizelegibility;
+  }
+}
+
+
+
+
+#bottom-banner {
+  font-family: "proxima-nova",sans-serif;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #A9A9A9;
+  min-height: 20px;
+  background-color: black;
+  
+  h4 {
+    font-size: 14.23px;
+  }
+}
+
+#logo-section {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  background-color: #BCC5CC;
+  padding-bottom: 1%;
+  
+  h4 {
+    font-size: 14.23px;
+    text-align: center;    
+    padding: 0;
+  }
+
+}
+
+#container { 
+  width: 100%;
+  overflow: hidden;   
+  position: relative;
+  height: 87%;  
+}
+
+
+#player { 
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+
+#first-product-section {
+  height: 525px;
+  padding-top: 5.5%;
+  width: 100%;
+  max-width: 100%;
+}
+
+#second-product-section {
+  height: 525px;
+  padding-top: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#first-product-section #second-product-section h2 {
+  margin-top: 54px;
+  font-size: 53.15px;
+  line-height: 1;
+  margin: 0;
+  color: #707070;
+  font-family: 'HelveticaNeueW01-Thin';
+  font-weight: 100;
+  width: 100%;
+  display: block;
+}
+
+
+
+a {
+  color: #099acb;
+  text-decoration: none;
+}
+
+.content-section {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  font-size: 18.15px;
+  line-height: 1.6;
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'HelveticaNeueW01-Thin';
+  font-weight: 100;
+
+}
+
+.row {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+  font-family: 'HelveticaNeueW01-Thin';
+  font-weight: 100;
+}
+
+.first-row-text {
+  margin-top: 17.73333333333333px;
+  opacity: 0.7466666666666667;
+  margin-left: 0; 
+  box-sizing: border-box;
+  float: left;
+  min-height: 30px;
+  display: block;
+  font-size: 18.15px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: 'HelveticaNeueW01-Thin';
+  width: 40.5%;
+  padding-left: 15%;
+  
+  h2 {
+     -webkit-margin-before: 0.83em;
+     -webkit-margin-after: 0.83em;
+     -webkit-margin-start: 0px;
+     -webkit-margin-end: 0px;
+     display: block;  
+     margin-top: 25px;
+     font-size: 43.15px;
+     line-height: 1;
+     margin: 0;
+     color: #323436;
+     font-family: 'HelveticaNeueW01-Thin';
+     font-weight: 100;
+     width: 100%;
+     text-rendering: optimizelegibility;
+     opacity: 1;
+  }
+  
+  p {
+    margin: 23px 0 12px;
+    font-size: 18.15px;
+    line-height: 26px;
+    font-family: 'HelveticaNeueW01-Thin';
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+  
+}
+
+#second-row-text {
+  padding-left: 4%;
+  width: 28.5%;
+}
+
+
+
+.image-container-right{
+  /* seemed to need to remove this to get images aligned correctly */
+  /* text-align: right; */
+  width: 57.5%;
+  float: right;
+  display: block;
+  min-height: 30px;
+  box-sizing: border-box;
+  margin-left: 2%;
+  font-size: 18.15px;
+  line-height: 1.6;
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-weight: 300;
+  padding-top: 5%;
+  padding-left: 6%;
+}
+
+.image-container-left{
+  /* text-align: right; */
+  width: 57.5%;
+  float: left;
+  display: block;
+  min-height: 30px;
+  box-sizing: border-box;
+  margin-left: 1%;
+  font-size: 18.15px;
+  line-height: 1.6;
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-weight: 300;
+  padding-top: 4.5%;
+  padding-left: 14%;
+}
+
+
+@media \0screen {
+  img { 
+    width: auto; /* for ie 8 */
+  }
+}
+
+
+.main-header{
+  display: block;   
+  position: relative;
+  height: auto;
+  max-width: 100%;
+}
+
+.main-nav {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  margin-left: 3%;
+  margin-top: 1%;
+  padding-right: 5%;
+  position: relative;
+  
+}
+
+.main-nav a {
+  color: #5D5347;
+  font-size: 14px;
+  line-height: 1.8;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+
+
+a.logo-link {
+  color: white;
+  background: none repeat scroll 0 0 #503D29;
+  padding: 5px;
+}
+
+
+a.about-link {
+  color: white;
+  background: none repeat scroll 0 0 #9FAC05;
+  padding: 5px;
+  margin-right: .4%;
+  float: right;
+}
+
+a.register-link {
+  color: white;
+  background: none repeat scroll 0 0 #EF722F;
+  padding: 5px;
+  margin-right: .4%;
+  float: right;
+}
+
+a.signin-link {
+  color: white;
+  background: none repeat scroll 0 0 #0AA899;
+  padding: 5px;
+  padding-left: .4%;
+  float: right; 
+  margin-right: 13%;
+}
+
+.main-header-stretch {
+  float:right;
+  position: relative;
+  width: 95%; 
+}
+
+.main-logo {
+  color: white;
+  background: none repeat scroll 0 0 #503D29;
+  padding: 5px;
+  margin-right: 50px;
+}
+
+.nav-logo {
+  height: auto;
+  max-width: 100%;
+  display: inline;
+  margin-left: 10%;
+}
+
+
+.light-logo {
+  height: 30px;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+a {
+  color: #099acb;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18.15px;
+  line-height: 1.6;
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+ul, menu, dir {
+  list-style-type: disc;
+}
 
 
