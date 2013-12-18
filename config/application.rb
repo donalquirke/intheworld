@@ -55,6 +55,9 @@ module Intheworld
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.precompile += %w( style.css ) 
+    #config.assets.paths << "#{Rails.root}/app/assets/videos"
+    config.assets.paths << "#{Rails.root}/public/videos"
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

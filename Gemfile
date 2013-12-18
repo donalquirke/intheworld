@@ -12,7 +12,8 @@ gem 'cache_digests'
 group :development, :production, :test do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'asset_sync'
+  # gem 'unf'
+  # gem 'asset_sync'
 end
 
 
