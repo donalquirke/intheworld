@@ -5,9 +5,20 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# These are need to effectively manage memcashier free add on on heroku
+gem 'dalli'
+gem 'cache_digests'
+
 group :development, :production, :test do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'asset_sync'
+end
+
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 #gem 'pg'
@@ -25,6 +36,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -49,10 +61,6 @@ gem 'haml'
 #gem 'bcrypt-ruby'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-end
 
 gem 'rufus-scheduler'
 
