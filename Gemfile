@@ -12,8 +12,6 @@ gem 'cache_digests'
 group :development, :production, :test do
   gem 'pg'
   gem 'rails_12factor'
-  # gem 'unf'
-  # gem 'asset_sync'
 end
 
 
@@ -34,6 +32,8 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  #gem "unf", "~> 0.1.3"
+  #gem 'asset_sync'
 end
 
 gem 'jquery-rails'
