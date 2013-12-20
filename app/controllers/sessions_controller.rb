@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController
-  skip_before_filter :authenticate_user!, :only => [:new, :create]
+  skip_before_filter :authenticate_user!, :only => [:new, :create, :get_started]
+  
+  def get_started
+    
+  end
   
   def new
     
