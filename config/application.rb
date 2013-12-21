@@ -55,7 +55,7 @@ module Intheworld
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.precompile += %w( style.css ) 
+    config.assets.precompile += %w( intentions.css main.css registerations.css sessions.css shared.css users.css ) 
     #config.assets.paths << "#{Rails.root}/app/assets/videos"
     config.assets.paths << "#{Rails.root}/public/videos"
 
