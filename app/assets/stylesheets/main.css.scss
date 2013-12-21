@@ -43,6 +43,31 @@ body {
     padding: 0;
 }
 
+#cards_menu_button {
+    display: table-cell;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 45px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;   
+    text-align: center;
+  
+}
+
+#app_menu_button {
+    display: table-cell;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;   
+    text-align: center;
+}
+
 #main-banner {
     display: table-cell;
     position: absolute;

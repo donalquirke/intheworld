@@ -10,9 +10,12 @@
     = label_tag :password
     = text_field_tag :password
   .actions 
+    -# image_submit_tag("login.png")
     = submit_tag "Login" 
 
 %p
+%p
   = link_to "Register", :controller => :registerations, :action => :new
+  -# = link_to image_tag('register.png'), url_for({:controller => 'registerations', :action => 'new'}), :class => ''
 
 
