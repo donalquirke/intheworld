@@ -9,13 +9,18 @@ class SessionsController < ApplicationController
     
   end
   
+  def menu
+    
+  end
+  
   def create
     
     user = Users.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       if session[:return_to] == nil
-        redirect_to intentions_url, :notice => "Logged in!"
+        #redirect_to intentions_url, :notice => "Logged in!"
+        redirect_to :action => :menu
       else
         url=session[:return_to] 
         session[:return_to] = nil

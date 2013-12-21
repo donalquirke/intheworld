@@ -1,11 +1,13 @@
 Intheworld::Application.routes.draw do
   post "sessions/destroy"
-  post "sessions/new"
+  post "sessions/new"  
+  get "sessions/menu"
   
   get "users/daily_intention"
   
   post "intentions/chosen"
   post "intentions/unchosen"
+  get "intentions/gallery"
   
   resources :intentions
   resources :users
