@@ -43,7 +43,7 @@ body {
     padding: 0;
 }
 
-#cards_menu_button {
+#centre_block_1 {
     display: table-cell;
     position: absolute;
     right: 0;
@@ -52,8 +52,7 @@ body {
     width: 100%;
     max-width: 100%;
     z-index: 1;   
-    text-align: center;
-  
+    text-align: center;  
 }
 
 #app_menu_button {
@@ -410,6 +409,8 @@ a.signin-link {
 #logo {
   margin-left: auto;
   margin-right: auto;
+  text-align: center; 
+  display: table-cell;
 }
 
 

@@ -20,3 +20,62 @@
   font-size: 21px;
   background-color: #800;
 }
+
+#app-landing-announce {
+  /* height: 525px; */
+  padding-top: 5.5%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.app-landing-row {  
+  padding-top: 5.5%;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+  font-family: 'HelveticaNeueW01-Thin';
+  font-weight: 100; 
+  
+  p {
+    width: 100%;
+    opacity: 0.7466666666666667;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18.15px;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: 'HelveticaNeueW01-Thin';
+    padding-left: 15%;
+    padding-right: 25%;
+  }
+  
+   .field {
+    padding-left: 30%;
+  }
+  
+  .actions {
+    padding-left: 37%;
+    padding-top: 2%;
+  }
+  
+  .register_btn {
+    padding-left: 35%;
+    padding-top: 2%;
+  }
+  
+}
+
+  
+  
+ 
+ 
+
+
+
+
+
+

@@ -1,6 +1,5 @@
 Intheworld::Application.routes.draw do
   post "sessions/destroy"
-  post "sessions/new"  
   get "sessions/menu"
   
   get "users/daily_intention"
@@ -16,6 +15,7 @@ Intheworld::Application.routes.draw do
   
   match 'login' => 'sessions#new' 
   match 'logout' => 'sessions#destroy'  
+  match 'app_landing' => 'sessions#app_landing'
   match 'intentions/:id' => 'intentions#show'
   match 'get_started' => 'sessions#get_started'
 

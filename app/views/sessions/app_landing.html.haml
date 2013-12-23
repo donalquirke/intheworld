@@ -1,0 +1,41 @@
+.app-landing-row
+  .first-row-text 
+    %h2 Get better at bringing balance and stillness into everyday Life.
+  %p
+    Being mindful in everyday life is different to sitting on a meditation cushion at home. Right? 
+    You can set up your home situation to be supportive of sitting quietly and stepping back from the frenzy of Life. 
+    But the world will never play along like that. It's far too messy and uncooperative a place, with unending drama and
+    activity. Days are filled with endless distractions; texts, emails, phonecalls and meetings. 
+    Oh yeah, usually we're preoccupied and lost into our thoughts as we go about our day too. 
+  %p All of which go to make daily mindfulness practice really difficult.
+  %p
+    Difficult, but not impossible. Remember the Karate Kid? 
+  %p
+    Remember how Daniel defeated the mean kids by learning and repeating small movements, over and over and over?
+  %p
+    "Wax on, wax off. Wax on, wax off."
+  %p
+    It's pretty simple. The more we practice something, the more improvements we see. 
+  %p
+    With mindfulness in everyday life, where people tend to go wrong is that they try to suddenly "go mindful". That's like going from your 
+    couch to running a marathon. It ain't going to happen boys and girls. Just like Daniel was never going to be champ unless he broke the challenge he 
+    faced into small steps, and practiced these steps with sincerity and perserverence.
+  %p
+    The MoreMindfully App will help you live a meaningful engagement with mindfulness practice so that it becomes personal and intimate.
+    Because unless you invest in your practice, walking it for yourself, you cannot cultivate mindfulness on a consistent basis.
+  %p
+    = form_tag sessions_path do    
+      .field
+        = label_tag :email
+        = text_field_tag :email, params[:email]
+      .field
+        = label_tag :password
+        = text_field_tag :password
+      .actions 
+        = image_submit_tag("login.png")
+        -# = submit_tag "Login" 
+  %p 
+    = link_to image_tag('register.png'), url_for({:controller => 'registerations', :action => 'new'}), :class =>'register_btn'
+    
+    
+

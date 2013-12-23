@@ -1,13 +1,12 @@
-%h3 Path in three short teachings.
-%p 
-  Do not do anything that takes you out of your body.
-%p
-  When sitting alone watch your mind.
-  When in public watch your speech.
-%p
-  Practice kindness.
-%p
-= button_to "Login", :action => :new
+#centre_block_1
+  = image_tag "logo 200x200.png", :class=>"img-responsive", :id=>"logo"
+  = link_to image_tag('login.png'), url_for({:controller => 'sessions', :action => 'app_landing'}), :class =>'login_btn'
+  %p
+  %h3 Hey #{@first_name}, thanks for your help.
+    
+
+  
+
 
 
 
